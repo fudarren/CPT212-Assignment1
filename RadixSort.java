@@ -46,8 +46,8 @@ public class RadixSort {
         int[][] first_buckets = new int[10][arr.length];
         int[] first_bucketCount = new int[10]; // To keep track of the number of elements in each bucket
 
-        int[][] second_buckets = new int[10][arr.length];
-        int[] second_bucketCount = new int[10];
+        int[][] second_buckets = new int[10][arr.length]; // Second buckets for even passes
+        int[] second_bucketCount = new int[10]; // To keep track of the number of elements in each bucket
 
         int place = 1; // Start with the least significant digit
 
